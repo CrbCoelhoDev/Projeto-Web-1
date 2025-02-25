@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie dinheiro, pague on-line ou crie uma conta comercial.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <!--validaçao formulario-->
+        <div class="login-pagina">
+            <div class="login-pagina-content">
+                <div class="login-pagina-logo logo">
+                    <span class="m-1">M</span>
+                    <span class="m-2">M</span>
+                    <span>Mercado</span><span>Pago</span>
+                </div>
+                <form class="login-pagina-form" onsubmit="return validateForm(event)">
+                    <input type="text" id="email" class="form-login-input" placeholder="Email ou número de celular">
+                    <span id="email-error" class="error-message"></span>
+                    <input type="password" id="password" class="form-login-input" placeholder="Senha">
+                    <span id="password-error" class="error-message"></span>
+                    <input type="submit" class="form-login-btn" value="Login">
+                    <a href="#" class="form-login-link">Está com problemas para fazer login?</a>
+                    <span>ou</span>
+                    <input type="button" class="form-cadastrar-btn cadastrar" value="Cadastrar-se">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim da validação-->
+
+        <!-- Pagina Frontal -->
+        <div class="front-pagina">
+            <!-- secao 1 --> 
+            <section class="section-1">
+                <div class="navbar-wrapper"> 
+                    <nav class="navbar">
+                        <div class="menu">
+                            <div class="menu-icon">
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </div>
+                            <span>Menu</span>
+                        </div>
+                        <div class="navbar-logo logo">
+                            <span class="m-1">M</span>
+                            <span class="m-2">M</span>
+                            Mercado Pago
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-list-item dropdown-hover">
+                                <a href="#" class="nav-list-link show-dropdown">Para Você <i class="fas fa-chevron-down"></i></a>
+                                <ul class="nav-dropdown nav-dropdown-Para-Voce"> 
+                                    <li class="nav-dropdown-item dropdown-heading">
+                                        <a href="#" class="dropdown-heading-link">
+                                            <i class="fas fa-chevron-down"></i> Para Você
+                                        </a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Créditos</a>
+                                        <a href="#" class="nav-dropdown-link-2">Cartão de credito, linha de crédito e Empréstimo pessoal</a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Pagamentos</a>
+                                        <a href="#" class="nav-dropdown-link-2">Pagamento online sem fronteiras</a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Meli+</a>
+                                        <a href="#" class="nav-dropdown-link-2">Cuidar da sua saúde financeira </a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Envie dinheiro</a>
+                                        <a href="#" class="nav-dropdown-link-2">Envie dinheiro com a menor taxa do mercado</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list-item dropdown-hover">
+                                <a href="#" class="nav-list-link show-dropdown">Para sua empresa <i class="fas fa-chevron-down"></i></a>
+                                <ul class="nav-dropdown nav-dropdown-business">
+                                    <li class="nav-dropdown-item dropdown-heading">
+                                        <a href="#" class="dropdown-heading-link">
+                                            <i class="fas fa-chevron-down"></i> Para sua empresa
+                                        </a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Todas as soluções empresariais</a>
+                                        <a href="#" class="nav-dropdown-link-2">Veja a nossa gama de produtos</a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Aceite pagamentos on-line</a>
+                                        <a href="#" class="nav-dropdown-link-2">Seja pago em seu site</a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Empréstimos para vendedores</a>
+                                        <a href="#" class="nav-dropdown-link-2">Parcelas fixas e menores taxas do mercado</a>
+                                    </li>
+                                    <li class="nav-dropdown-item">
+                                        <a href="#" class="nav-dropdown-link-1">Cobrar por celular</a>
+                                        <a href="#" class="nav-dropdown-link-2">Transforme grátis seu celular em uma maquininha
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#" class="nav-list-link">Parceiros e Desenvolvedores</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-buttons">
+                            <button class="navbar-btn login-btn login">iniciar</button>
+                            <button class="navbar-btn cadastrar-btn cadastrar">Cadastrar-se</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="banner">
+                    <h1 class="banner-heading">Nós Temos Você Protegido</h1>
+                    <p class="banner-paragraph">Com Mercado Pago você gerencia tudo de um só lugar: do seu bolso às suas vendas. Tudo isso com as menores taxas do mercado e junto com você a melhor equipe em soluções pro seu negócio</p>
+                    <button class="blue-btn">Saber Mais</button>
+                </div>
+            </section>
+            <!-- Fim da secao 1 -->
+
+            <!-- secao 2 -->
+            <section class="section-2">
+                <h1 class="section-2-heading">
+                    Mercado é para todos que pagam ou recebem</h1>
+                <div class="serviços">
+                    <div class="serviço">
+                        <i class="fas fa-user-tie"></i>
+                        <h3 class="serviço-heading">Individual</h3>
+                        <p class="serviço-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, veritatis!</p>
+                        <button class="serviço-btn">Saiba Mais</button>
+                    </div>
+                    <div class="serviço">
+                        <i class="fas fa-briefcase"></i>
+                        <h3 class="serviço-heading">Negócios</h3>
+                        <p class="serviço-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, veritatis!</p>
+                        <button class="serviço-btn">Saiba Mais</button>
+                    </div>
+                    <div class="serviço">
+                        <i class="far fa-handshake"></i>
+                        <h3 class="serviço-heading">Parceiros</h3>
+                        <p class="serviço-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, veritatis!</p>
+                        <button class="serviço-btn">Saiba Mais</button>
+                    </div>
+                </div>
+            </section>
+            <!-- fim da secao 2 -->
+
+            <!-- secao 3 -->
+            <section class="section-3">
+                <h1 class="section-3-heading">O mundo todo prefere o Mercado Pago</h1>
+                <div class="features">
+                    <div class="feature">
+                        <h3 class="feature-heading">Proteção Avançada</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-heading">Pagamentos rápidos</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-heading">Alcance global</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-heading">Fácil integração</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-heading">Simples e conveniente</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-heading">24 horas</h3>
+                        <p class="feature-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque qui hic repellendus dolorem. Autem dolorem quos vel nisi esse expedita nesciunt laborum omnis eum!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- fim da secao 3 -->           
+            <!-- secao 4 -->
+            <section class="section-4">
+                <h1 class="section-4-heading">Comece a usar o Mercado Pago</h1>
+                <div class="section-4-content">
+                    <div class="section-4-img-wrapper">
+                        <img src="images/macbook.png">
+                    </div>
+                    <ul class="section-4-list">
+                        <li class="section-4-list-item">
+                            <span class="numero">1</span>
+                            <span>Configurar <a href="#">Uma conta empresarial</a></span>
+                        </li>
+                        <li class="section-4-list-item">
+                            <span class="numero">2</span>
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, esse?</span>
+                        </li>
+                        <li class="section-4-list-item">
+                            <span class="numero">3</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- fim da secao 4 -->
+
+            <!-- secao 5 -->
+            <section class="section-5">
+                <div class="section-5-top">
+                    <h2 class="section-5-top-heading">MERCADO PAGO, AGORA VAI </h2>
+                    <button class="blue-btn cadastrar">Abrir conta grátis</button>
+                </div>
+                <rodapé class="rodapé">
+                    <div class="rodapé-top">
+                        <ul class="rodapé-list">
+                            <li>
+                                <a href="#">Ajuda e Contato</a>
+                            </li>
+                            <li>
+                                <a href="#">Tarifas</a>
+                            </li>
+                            <li>
+                                <a href="#">Segurança</a>
+                            </li>
+                            <li>
+                                <a href="#">benefícios</a>
+                            </li>
+                            <li>
+                                <a href="#">Comprar</a>
+                            </li>
+                        </ul>
+                        <ul class="rodapé-list">
+                            <li>
+                                <a href="#">Inglês</a>
+                            </li>
+                            <li>
+                                <a href="#">Espanhol</a>
+                            </li>
+                            <li>
+                                <a href="#">Português</a>
+                            </li>
+                            <li>
+                                <a href="#">Italiano</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/flag.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rodapé-bottom">
+                        <p class="copyright">Copyright &copy; All Rights Reserved</p>
+                    </div>
+                </rodapé>
+            </section>
+            <!-- fim da secao 5 -->
+        </div>
+        <!-- fim da pagina frotnal -->
+
+        <!-- Login pagina -->
+        <div class="login-pagina">
+            <div class="login-pagina-content">
+                <div class="login-pagina-logo logo">
+                    <span class="m-1">M</span>
+                    <span class="m-2">M</span>
+                    <span>Mercado</span><span>Pago</span>
+                </div>
+                <form class="login-pagina-form">
+                    <input type="text" class="form-login-input" placeholder="Email or mobile numero">
+                    <input type="password" class="form-login-input" >
+                    <input type="button" class="form-login-btn" value="Login">
+                    <a href="#" class="form-login-link">Está com problemas para fazer login?</a>
+                    <span>ou</span>
+                    <input type="button" class="form-cadastrar-btn cadastrar" value="Cadastra-se">
+                </form>
+            </div>
+        </div>
+        <!-- fim da pagina de login -->
+
+        <!-- Cadastro pagina -->
+        <div class="cadastrar-pagina">
+            <div class="cadastrar-pagina-top">
+                <div class="cadastrar-pagina-logo logo">
+                    <span class="m-1">M</span>
+                    <span class="m-2">M</span>
+                    Mercado Pago
+                </div>
+                <button class="login">Log In</button>
+            </div>
+            <div class="cadastrar-pagina-content">
+                <div class="cadastrar-pagina-content-left">
+                    <div class="content-left-images">
+                        <img src="images/person-1.jpg">
+                        <img src="images/person-2.jpg">
+                        <img src="images/person-3.jpg">
+                    </div>
+                    <h1>Veja você mesmo por que milhões de pessoas adoram o Mercado Pago</h1>
+                </div>
+                <div class="cadastrar-pagina-content-right">
+                    <h3>Cadastre-se grátis </h3>
+                    <h4>Escolha entre dois tipos de contas:</h4>
+                    <form class="cadastrar-pagina-form">
+                        <div class="input-group">
+                            <input type="radio" name="checkbox" checked>
+                            <div class="option">
+                                <h3>Conta Pessoal</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ducimus minima, incidunt beatae veritatis ad delectus temporibus eaque enim ea!</p>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" name="checkbox">
+                            <div class="option">
+                                <h3>Conta Empresarial</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ducimus minima, incidunt beatae veritatis ad delectus temporibus eaque enim ea!</p>
+                            </div>
+                        </div>
+                        <button class="blue-btn">Continue</button>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+        <!-- fim da pagina de cadastro -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
